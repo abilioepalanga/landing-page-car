@@ -94,16 +94,18 @@ section {
                 }
 
                 & button {
-                    background-color: #454435;
+                    background-color: #24c60bc8;
                     color: aliceblue;
-                    padding: 6px 12px;
-                    border: mediumspringgreen 1px solid;
+                    padding: 2px;
+                    height: 28px;
+                    width: 100px;
+                    border: rgb(255, 255, 255) 1px solid;
                     cursor: pointer;
-                    border-radius: 8px;
-                    font-size: 1.5rem;
+                    border-radius: 30px;
                     transition: 0.3s;
+                    font-weight: bold;
                     &:hover {
-                        background-color: #c6ad0b97;
+                        background-color: #1bffec59;
                     }
                 }
             }
