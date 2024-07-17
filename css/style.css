@@ -131,5 +131,24 @@ section {
         width: 90vw;
         color: aliceblue;
         transform: translate(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        gap: 15px;
+
+        & .number {
+            font-size: 5rem;
+        }
+
+        & ul {
+            display: flex;
+            gap: 10px;
+
+            & li {
+                width: 50px;
+                height: 5px;
+                background-color: brown;
+            }
+        }
     }
 }
