@@ -72,6 +72,20 @@ section {
             }
 
             & .content {
+                position: absolute;
+                right: 100px;
+                width: 70%;
+                height: 100%;
+                display: flex;
+                color: aliceblue;
+                flex-direction: column;
+                justify-content: end;
+                align-items: end;
+                gap: 20px;
+
+                & h1 {
+                    font-size: 8em;
+                }
             }
         }
         & .text {
