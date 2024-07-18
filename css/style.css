@@ -44,7 +44,8 @@ header {
 }
 
 section {
-    background-image: radial-gradient(#c6ad0b, #00c74c69);
+    /*background-image: radial-gradient(#c6ad0b, #00c74c69);*/
+    background-image: radial-gradient(circle, #33ff66, #ff5533, #8133ffbb);
     height: 100vh;
     position: relative;
 
@@ -123,6 +124,10 @@ section {
             }
         }
     }
+
+    & .arrows {
+    }
+
     & .indicators {
         position: absolute;
         top: 50%;
