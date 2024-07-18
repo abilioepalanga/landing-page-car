@@ -151,39 +151,40 @@ section {
             }
             & i:hover {
                 background-color: slategray;
-        }
-    }
-
-    & .indicators {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        height: 200px;
-        width: 90vw;
-        color: aliceblue;
-        transform: translate(-50%);
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        gap: 15px;
-
-        & .number {
-            font-size: 5rem;
-        }
-
-        & ul {
-            display: flex;
-            gap: 10px;
-
-            & li {
-                width: 50px;
-                height: 5px;
-                border-radius: 5px;
-                background-color: white;
-                transition: 0.5s;
             }
-            & .active {
-                background-color: #24c60bc8;
+        }
+
+        & .indicators {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 200px;
+            width: 90vw;
+            color: aliceblue;
+            transform: translate(-50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            gap: 15px;
+
+            & .number {
+                font-size: 5rem;
+            }
+
+            & ul {
+                display: flex;
+                gap: 10px;
+
+                & li {
+                    width: 50px;
+                    height: 5px;
+                    border-radius: 5px;
+                    background-color: white;
+                    transition: 0.5s;
+                }
+                & .active {
+                    background-color: #24c60bc8;
+                }
             }
         }
     }
