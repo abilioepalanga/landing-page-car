@@ -122,6 +122,15 @@ section {
                 text-align: center;
             }
         }
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: 200px;
+            width: 100%;
+            top: 50%;
+            border-top: 1px solid #fff;
+        }
     }
 
     & .arrows {
