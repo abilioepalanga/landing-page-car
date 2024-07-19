@@ -47,11 +47,9 @@ section {
     /*background-image: radial-gradient(#c6ad0b, #00c74c69);*/
     background-image: radial-gradient(circle, #33ff66, #ff5533, #8133ffbb);
     height: 100vh;
-    position: relative;
-
     & .list {
         width: 70vw;
-        height: 100%;
+        height: 90%;
         margin: auto;
         position: relative;
 
