@@ -49,17 +49,16 @@ section {
     height: 100vh;
     & .list {
         width: 70vw;
-        height: 90%;
+        height: 70%;
         margin: auto;
         position: relative;
 
         & .item {
             position: absolute;
             inset: 0;
-
             & .car-img {
                 position: absolute;
-                top: 50%;
+                top: 70%;
                 transform: translateY(-50%);
                 width: 70%;
 
