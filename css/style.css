@@ -72,8 +72,8 @@ section {
 
             & .content {
                 position: absolute;
-                margin-left: 52%;
-                margin-top: 22%;
+                margin-left: 520px;
+                margin-top: 160px;
                 width: 70%;
                 height: 100%;
                 display: flex;
