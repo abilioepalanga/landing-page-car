@@ -183,9 +183,8 @@ section {
         gap: 15px;
 
         & .number {
-            font-size: 1rem;
-            position: relative;
-            background-color: royalblue;
+            font-size: 5rem;
+            margin-right: 110px;
         }
 
         & ul {
