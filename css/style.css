@@ -311,6 +311,15 @@ section {
                     transition: 0.7s;
                     transition-delay: 0.3s;
                 }
+                & h1 {
+                    transition-delay: 0.5s;
+                }
+                & .description {
+                    transition-delay: 0.7s;
+                }
+                & button {
+                    transition-delay: 0.7s;
+                }
             }
         }
     }
