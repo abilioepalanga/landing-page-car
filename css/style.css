@@ -73,10 +73,6 @@ section {
 
             & .content {
                 position: absolute;
-                inset: 0;
-                /* margin-left: 520px;
-                margin-top: 150px;
-                width: 700px;*/
                 margin-top: 11vw;
                 margin-left: 50vw;
                 display: flex;
@@ -84,7 +80,6 @@ section {
                 flex-direction: column;
                 justify-content: right;
                 align-items: center;
-                gap: 1px;
 
                 & h1 {
                     font-size: 6vw;
@@ -134,10 +129,11 @@ section {
             content: "";
             position: absolute;
             margin-top: 112px;
-            margin-right: 40px;
+            margin-right: 16.7%;
+            margin-left: -6%;
             width: 78.5vw;
             top: 50%;
-            left: -65px;
+
             border-top: 1.6px solid #fff;
         }
     }
@@ -210,13 +206,8 @@ section {
     section {
         & .list {
             & .content {
-                margin-top: 10vw;
-                margin-left: 50vw;
                 & h1 {
-                    font-size: 8vw;
-                }
-                & .description {
-                    max-width: 300px;
+                    margin-top: 30px;
                 }
             }
         }
