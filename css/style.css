@@ -148,7 +148,8 @@ section {
         justify-content: space-between;
         position: absolute;
         transform: translate(-50%, -50%);
-        top: 50%;
+        margin-top: 112px;
+        top: 33%;
         left: 50%;
         color: aliceblue;
 
@@ -200,6 +201,23 @@ section {
             }
             & .active {
                 background-color: #24c60b;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1546px) {
+    section {
+        & .list {
+            & .content {
+                margin-top: 10vw;
+                margin-left: 50vw;
+                & h1 {
+                    font-size: 8vw;
+                }
+                & .description {
+                    max-width: 300px;
+                }
             }
         }
     }
