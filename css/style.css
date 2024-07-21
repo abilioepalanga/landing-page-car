@@ -261,6 +261,34 @@ section {
         }
     }
 }
+@media screen and (max-width: 1058px) {
+    section {
+        & .list {
+            & .item {
+                & .content {
+                    margin-top: 31%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 965px) {
+    section {
+        & .list {
+            & .item {
+                & .content {
+                    margin-top: 30%;
+                    & .description {
+                        overflow-y: hidden;
+                    }
+                    & button {
+                        margin-bottom: 5%;
+                    }
+                }
+            }
+        }
+    }
+}
 section {
     & .list {
         & .item {
