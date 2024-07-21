@@ -308,7 +308,7 @@ section {
                 .description,
                 button {
                     transform: translateX(200px);
-                    /*opacity: 0;*/
+                    opacity: 0;
                     transition: 0.7s;
                     transition-delay: 0.3s;
                 }
@@ -332,6 +332,7 @@ section {
                 .description,
                 button {
                     transform: translateX(0px);
+                    opacity: 1;
                 }
             }
             & .car-img {
