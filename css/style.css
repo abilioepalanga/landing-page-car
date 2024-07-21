@@ -327,6 +327,23 @@ section {
             transform: translateX(0);
             transition: 0.5s;
             opacity: 1;
+            & .content {
+                & h1,
+                .description,
+                button {
+                    transform: translateX(200px);
+                    /*opacity: 0;*/
+                    transition: 0.7s;
+                    transition-delay: 0.3s;
+                }
+            }
+            & .car-img {
+                & img {
+                    transform: rotate(0deg);
+                    transition: 0.5s;
+                    transition-delay: 0.3s;
+                }
+            }
         }
     }
 }
