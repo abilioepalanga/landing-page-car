@@ -75,6 +75,7 @@ section {
                 position: absolute;
                 margin-top: 12.5%;
                 margin-left: 50vw;
+                height: auto;
                 display: flex;
                 color: aliceblue;
                 flex-direction: column;
@@ -84,6 +85,8 @@ section {
                 & h1 {
                     font-size: 6vw;
                     font-family: "DM Serif Display", serif;
+                    margin-bottom: 20px;
+                    display: flex;
                 }
                 & .description {
                     color: rgb(255, 255, 255);
@@ -207,7 +210,7 @@ section {
         & .list {
             & .item {
                 & .content {
-                    margin-top: 17%;
+                    margin-top: 15%;
                 }
             }
         }
@@ -219,13 +222,45 @@ section {
         & .list {
             & .item {
                 & .content {
-                    margin-top: 19%;
+                    margin-top: 18%;
                 }
             }
         }
     }
 }
-
+@media screen and (max-width: 1373px) {
+    section {
+        & .list {
+            & .item {
+                & .content {
+                    margin-top: 20%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1280px) {
+    section {
+        & .list {
+            & .item {
+                & .content {
+                    margin-top: 22%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1186px) {
+    section {
+        & .list {
+            & .item {
+                & .content {
+                    margin-top: 25%;
+                }
+            }
+        }
+    }
+}
 section {
     & .list {
         & .item {
