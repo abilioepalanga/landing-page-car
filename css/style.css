@@ -294,6 +294,7 @@ section {
         & .item {
             transform: translateX(100vw);
             transition: 0.5s;
+            opacity: 0;
 
             & .car-img {
                 & img {
@@ -321,6 +322,11 @@ section {
                     transition-delay: 0.9s;
                 }
             }
+        }
+        & .active {
+            transform: translateX(0);
+            transition: 0.5s;
+            opacity: 1;
         }
     }
 }
