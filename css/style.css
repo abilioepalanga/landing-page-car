@@ -292,6 +292,9 @@ section {
 section {
     & .list {
         & .item {
+            transform: translateX(100vw);
+            transition: 0.5s;
+
             & .car-img {
                 & img {
                     width: 100%;
