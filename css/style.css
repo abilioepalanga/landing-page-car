@@ -331,10 +331,7 @@ section {
                 & h1,
                 .description,
                 button {
-                    transform: translateX(200px);
-                    /*opacity: 0;*/
-                    transition: 0.7s;
-                    transition-delay: 0.3s;
+                    transform: translateX(0px);
                 }
             }
             & .car-img {
