@@ -73,7 +73,7 @@ section {
 
             & .content {
                 position: absolute;
-                margin-top: 11vw;
+                margin-top: 12.5%;
                 margin-left: 50vw;
                 display: flex;
                 color: aliceblue;
@@ -202,7 +202,31 @@ section {
     }
 }
 
-@media screen and (max-width: 1546px) {
+@media screen and (max-width: 1618px) {
+    section {
+        & .list {
+            & .content {
+                & h1 {
+                    margin-top: 10%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1531px) {
+    section {
+        & .list {
+            & .content {
+                & h1 {
+                    margin-top: 2vw;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1513px) {
     section {
         & .list {
             & .content {
