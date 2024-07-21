@@ -73,9 +73,11 @@ section {
 
             & .content {
                 position: absolute;
-                margin-left: 520px;
+                /* margin-left: 520px;
                 margin-top: 150px;
-                width: 700px;
+                width: 700px;*/
+                margin-top: 10vw;
+                margin-left: 50vw;
                 display: flex;
                 color: aliceblue;
                 flex-direction: column;
