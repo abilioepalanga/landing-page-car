@@ -46,7 +46,8 @@ header {
 section {
     /*background-image: radial-gradient(#c6ad0b, #00c74c69);*/
     background-image: radial-gradient(circle, #33ff66, #ff5533, #8133ffbb);
-    height: 100vh;
+    height: 96vh;
+    width: 100%;
     & .list {
         width: 70vw;
         height: 70%;
@@ -73,12 +74,10 @@ section {
             & .content {
                 position: absolute;
                 margin-left: 520px;
-                margin-top: 160px;
-                width: 70%;
-                height: 100%;
+                margin-top: 150px;
+                width: 700px;
                 display: flex;
                 color: aliceblue;
-                display: flex;
                 flex-direction: column;
                 justify-content: right;
                 align-items: center;
@@ -197,7 +196,7 @@ section {
                 transition: 0.5s;
             }
             & .active {
-                background-color: #24c60bc8;
+                background-color: #24c60b;
             }
         }
     }
