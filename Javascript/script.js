@@ -4,8 +4,9 @@ let conteiner = document.querySelector(".conteiner");
 let items = document.querySelectorAll(".list .item");
 let indicator = document.querySelector(".indicators");
 let dots = document.querySelectorAll(".indicators li");
+let number = document.querySelector(".number");
 
-let active = 0;
+let i = 1;
 let fisrtItem = items[0];
 let fisrtNumber = dots[0];
 prevButton.addEventListener("click", function () {
@@ -14,11 +15,9 @@ prevButton.addEventListener("click", function () {
 
     /*Numbers*/
     let activeNumber = document.querySelector(".indicators li.active2");
-    console.log("Active" + activeNumber.innerHTML);
-    /*let nextNumber = activeNumber.nextElementSibling;
-    console.log("NExt" + nextNumber);
+    let nextNumber = activeNumber.nextElementSibling;
 
-    if (nextItem != null) {
+    if (nextItem != null && nextNumber != null) {
         activeItem.classList.remove("active");
         nextItem.classList.add("active");
 
@@ -28,6 +27,9 @@ prevButton.addEventListener("click", function () {
         nextItem = fisrtItem;
         activeItem.classList.remove("active");
         fisrtItem.classList.add("active");
+
+        nextNumber = fisrtNumber;
+        activeNumber.classList.remove("active2");
+        fisrtNumber.classList.add("active2");
     }
-    */
 });
