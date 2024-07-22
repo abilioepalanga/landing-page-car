@@ -10,15 +10,10 @@ let fisrtItem = items[0];
 let lastItem = items.length - 1;
 prevButton.addEventListener("click", function () {
     let activeItem = document.querySelector(".list .item.active");
-    let activeDot = document.querySelector(".indicators li.active");
-    let prevItem = activeItem.previousElementSibling;
-    let prevDot = activeDot.previousElementSibling;
+    let nextItem = activeItem.nextElementSibling;
 
-    if (prevItem) {
+    if (nextItem != null) {
         activeItem.classList.remove("active");
-        prevItem.classList.add("active");
-
-        activeDot.classList.remove("active");
-        prevDot.classList.add("active");
+        console.log("Prizley" + nextItem.innerHTML.length);
     }
 });
