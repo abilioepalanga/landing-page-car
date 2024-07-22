@@ -11,6 +11,9 @@ let lastItem = items.length - 1;
 prevButton.addEventListener("click", function () {
     let activeItem = document.querySelector(".list .item.active");
     let nextItem = activeItem.nextElementSibling;
+    /*Numbers*/
+    let number = document.querySelector(".indicators .number li.active");
+    let nextNumber = number.nextElementSibling;
 
     if (nextItem != null) {
         activeItem.classList.remove("active");
