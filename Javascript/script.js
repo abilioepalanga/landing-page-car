@@ -24,7 +24,7 @@ prevButton.addEventListener("click", function () {
         activeNumber.classList.remove("active2");
         nextNumber.classList.add("active2");
 
-        number.setAttributeNode("value", ++i);
+        number.innerText = ++i;
     } else {
         nextItem = fisrtItem;
         activeItem.classList.remove("active");
