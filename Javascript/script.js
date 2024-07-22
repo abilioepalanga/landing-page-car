@@ -14,6 +14,10 @@ prevButton.addEventListener("click", function () {
 
     if (nextItem != null) {
         activeItem.classList.remove("active");
-        console.log("Prizley" + nextItem.innerHTML.length);
+        nextItem.classList.add("active");
+    } else {
+        nextItem = fisrtItem;
+        activeItem.classList.remove("active");
+        fisrtItem.classList.add("active");
     }
 });
