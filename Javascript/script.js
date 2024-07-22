@@ -37,3 +37,32 @@ prevButton.addEventListener("click", function () {
         number.setAttribute = 1;
     }
 });
+
+nextButton.addEventListener("click", function () {
+    let activeItem = document.querySelector(".list .item.active");
+    let prevItem = activeItem.previousElementSibling;
+
+    /*Numbers*/
+    let activeNumber = document.querySelector(".indicators li.active2");
+    let prevNumber = activeNumber.previousElementSibling;
+
+    if (prevItem != null && prevNumber != null) {
+        activeItem.classList.remove("active");
+        prevItem.classList.add("active");
+
+        activeNumber.classList.remove("active2");
+        prevNumber.classList.add("active2");
+
+        number.setAttributeNode("value", --i);
+    } else {
+        prevItem = items[items.length - 1];
+        activeItem.classList.remove("active");
+        prevItem.classList.add("active");
+
+        prevNumber = dots[dots.length - 1];
+        activeNumber.classList.remove("active2");
+        prevNumber.classList.add("active2");
+
+        number.setAttribute = items.length;
+    }
+});
