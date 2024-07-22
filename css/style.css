@@ -198,7 +198,7 @@ section {
                 background-color: white;
                 transition: 0.5s;
             }
-            & .active {
+            & .active2 {
                 background-color: #24c60b;
             }
         }
