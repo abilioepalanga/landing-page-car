@@ -6,6 +6,7 @@ let indicator = document.querySelector(".indicators");
 let dots = document.querySelectorAll(".indicators li");
 let number = document.querySelector(".indicators .number");
 
+let control = document.querySelectorAll(".indicators .number");
 let i = 1;
 let fisrtItem = items[0];
 let fisrtNumber = dots[0];
@@ -33,8 +34,8 @@ prevButton.addEventListener("click", function () {
         nextNumber = fisrtNumber;
         activeNumber.classList.remove("active2");
         fisrtNumber.classList.add("active2");
-
-        number.setAttribute = 1;
+        number.document.setAttribute.firstChild;
+        number.innerText = 1;
     }
 });
 
