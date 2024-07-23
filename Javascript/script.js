@@ -36,7 +36,6 @@ prevButton.addEventListener("click", function () {
         fisrtNumber.classList.add("active2");
         i = 1;
         number.innerText = i;
-        console.log("S" + number);
     }
 });
 
@@ -48,6 +47,8 @@ nextButton.addEventListener("click", function () {
     let activeNumber = document.querySelector(".indicators li.active2");
     let prevNumber = activeNumber.previousElementSibling;
 
+    i < 1 ? (i = items.length) : i;
+
     if (prevItem != null && prevNumber != null) {
         activeItem.classList.remove("active");
         prevItem.classList.add("active");
@@ -55,7 +56,7 @@ nextButton.addEventListener("click", function () {
         activeNumber.classList.remove("active2");
         prevNumber.classList.add("active2");
 
-        number.setAttributeNode("value", --i);
+        number.innerText = --i;
     } else {
         prevItem = items[items.length - 1];
         activeItem.classList.remove("active");
@@ -65,6 +66,7 @@ nextButton.addEventListener("click", function () {
         activeNumber.classList.remove("active2");
         prevNumber.classList.add("active2");
 
-        number.setAttribute = items.length;
+        i = items.length;
+        number.innerText = i;
     }
 });
