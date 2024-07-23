@@ -13,7 +13,7 @@ let fisrtNumber = dots[0];
 prevButton.addEventListener("click", function () {
     let activeItem = document.querySelector(".list .item.active");
     let nextItem = activeItem.nextElementSibling;
-
+    i <= items.length ? i : (i = 0);
     /*Numbers*/
     let activeNumber = document.querySelector(".indicators li.active2");
     let nextNumber = activeNumber.nextElementSibling;
@@ -34,8 +34,9 @@ prevButton.addEventListener("click", function () {
         nextNumber = fisrtNumber;
         activeNumber.classList.remove("active2");
         fisrtNumber.classList.add("active2");
-        number.document.setAttribute.firstChild;
-        number.innerText = 1;
+        i = 1;
+        number.innerText = i;
+        console.log("S" + number);
     }
 });
 
