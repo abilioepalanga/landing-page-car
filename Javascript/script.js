@@ -10,7 +10,7 @@ let control = document.querySelectorAll(".indicators .number");
 let i = 1;
 let fisrtItem = items[0];
 let fisrtNumber = dots[0];
-prevButton.addEventListener("click", function () {
+nextButton.addEventListener("click", function () {
     let activeItem = document.querySelector(".list .item.active");
     let nextItem = activeItem.nextElementSibling;
     i <= items.length ? i : (i = 0);
@@ -25,7 +25,7 @@ prevButton.addEventListener("click", function () {
         activeNumber.classList.remove("active2");
         nextNumber.classList.add("active2");
 
-        number.innerText = ++i;
+        number.innerText = "0" + ++i;
     } else {
         nextItem = fisrtItem;
         activeItem.classList.remove("active");
@@ -35,11 +35,11 @@ prevButton.addEventListener("click", function () {
         activeNumber.classList.remove("active2");
         fisrtNumber.classList.add("active2");
         i = 1;
-        number.innerText = i;
+        number.innerText = "0" + i;
     }
 });
 
-nextButton.addEventListener("click", function () {
+prevButton.addEventListener("click", function () {
     let activeItem = document.querySelector(".list .item.active");
     let prevItem = activeItem.previousElementSibling;
 
@@ -56,7 +56,7 @@ nextButton.addEventListener("click", function () {
         activeNumber.classList.remove("active2");
         prevNumber.classList.add("active2");
 
-        number.innerText = --i;
+        number.innerText = "0" + --i;
     } else {
         prevItem = items[items.length - 1];
         activeItem.classList.remove("active");
@@ -67,6 +67,6 @@ nextButton.addEventListener("click", function () {
         prevNumber.classList.add("active2");
 
         i = items.length;
-        number.innerText = i;
+        number.innerText = "0" + i;
     }
 });
