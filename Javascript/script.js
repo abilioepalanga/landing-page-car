@@ -13,6 +13,7 @@ let fisrtNumber = dots[0];
 nextButton.addEventListener("click", function () {
     let activeItem = document.querySelector(".list .item.active");
     let nextItem = activeItem.nextElementSibling;
+
     i <= items.length ? i : (i = 0);
     /*Numbers*/
     let activeNumber = document.querySelector(".indicators li.active2");
