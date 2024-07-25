@@ -6,11 +6,16 @@ let indicator = document.querySelector(".indicators");
 let dots = document.querySelectorAll(".indicators li");
 let number = document.querySelector(".indicators .number");
 
+let list = document.querySelector("section .list");
+
 let control = document.querySelectorAll(".indicators .number");
 let i = 1;
 let fisrtItem = items[0];
 let fisrtNumber = dots[0];
+
 nextButton.addEventListener("click", function () {
+    list.style.setProperty("--calculation", 1);
+
     let activeItem = document.querySelector(".list .item.active");
     let nextItem = activeItem.nextElementSibling;
 
@@ -41,6 +46,8 @@ nextButton.addEventListener("click", function () {
 });
 
 prevButton.addEventListener("click", function () {
+    list.style.setProperty("--calculation", -1);
+
     let activeItem = document.querySelector(".list .item.active");
     let prevItem = activeItem.previousElementSibling;
 
