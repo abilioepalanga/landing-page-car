@@ -16,8 +16,10 @@ let fisrtNumber = dots[0];
 nextButton.addEventListener("click", function () {
     if (list.style.getPropertyValue("--calculation") < 0) {
         list.style.setProperty("--calculation", -1);
+        console.log(list.style.getPropertyValue("--calculation"));
     } else {
         list.style.setProperty("--calculation", 1);
+        console.log(list.style.getPropertyValue("--calculation"));
     }
 
     let activeItem = document.querySelector(".list .item.active");
