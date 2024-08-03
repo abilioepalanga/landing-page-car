@@ -22,7 +22,8 @@ nextButton.addEventListener("click", function () {
         console.log(list.style.getPropertyValue("--calculation"));
     }
 
-    let activeItem = document.querySelector(".list .item.active");
+    let activeItem;
+    activeItem = document.querySelector(".list .item.active");
     let nextItem = activeItem.nextElementSibling;
 
     i <= items.length ? i : (i = 0);
