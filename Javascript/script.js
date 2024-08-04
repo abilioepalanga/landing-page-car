@@ -84,7 +84,7 @@ prevButton.addEventListener("click", function () {
         prevNumber = dots[dots.length - 1];
         activeNumber.classList.remove("active2");
         prevNumber.classList.add("active2");
-
+        // i igual a quantidade de items
         i = items.length;
         number.innerText = "0" + i;
     }
